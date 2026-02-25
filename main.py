@@ -7,13 +7,9 @@ from datetime import datetime
 # =======================
 # KONFIGURASI TETAP
 # =======================
-TELEGRAM_TOKEN = "8140044459:AAHTLV64V7wwOVI1OEYhc2Oh60_ozhO09t0"
-TELEGRAM_CHAT_ID = "7753119384"
-CSV_URL = (
-    "https://docs.google.com/spreadsheets/d/1iZ2Iny1GsaZpmQHkEuXXVg8qzq4WSa-LrcW3SeKzvAw/"
-    "export?format=csv&gid=0"
-)
-
+TELEGRAM_TOKEN = os.getenv("BOT_TOKEN")
+TELEGRAM_CHAT_ID = os.getenv("CHAT_ID")
+CSV_URL = "https://docs.google.com/spreadsheets/d/1iZ2Iny1GsaZpmQHkEuXXVg8qzq4WSa-LrcW3SeKzvAw/export?format=csv&gid=0"
 # =======================
 # PARAMETER ADAPTIF (selaras Pine)
 # =======================
@@ -347,4 +343,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
