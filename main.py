@@ -7,9 +7,12 @@ from datetime import datetime
 # =======================
 # KONFIGURASI TETAP
 # =======================
+import os
+
 TELEGRAM_TOKEN = os.getenv("BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("CHAT_ID")
 CSV_URL = "https://docs.google.com/spreadsheets/d/1iZ2Iny1GsaZpmQHkEuXXVg8qzq4WSa-LrcW3SeKzvAw/export?format=csv&gid=0"
+
 # =======================
 # PARAMETER ADAPTIF (selaras Pine)
 # =======================
@@ -343,5 +346,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
